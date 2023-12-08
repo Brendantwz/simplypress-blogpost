@@ -1,0 +1,44 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <main>
+        <div class="py-5 text-center">
+            <h2>Edit your blog post</h2>
+            <p class="lead">Modify the details and submit the form to update your post.</p>
+        </div>
+
+        <div class="col-lg-12">
+            <form class="needs-validation" novalidate="" action="/update/<%= post.id %>" method="POST">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="author" class="form-label">Author Name</label>
+                        <input type="text" class="form-control" id="author" name="author" placeholder="Enter Name" value="<%= post.author %>" required="">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="title" class="form-label">Title of Blog Post</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Your Title" value="<%= post.title %>" required="">
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="content" class="form-label">Content</label>
+                        <textarea class="form-control" style="height: 200px;" id="content" name="content" placeholder="Write your content"><%= post.content %></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="genre" class="form-label">Genre</label>
+                        <input type="text" class="form-control" id="genre" name="genre" placeholder="Eg: Psychology, Finance, Engineering, AI, etc" value="<%= post.genre %>" required="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Update Blog Post</button>
+            </form>
+        </div>
+    </main>
+</div>
+
+<%- include("partials/footer.ejs") %>

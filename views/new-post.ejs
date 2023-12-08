@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>Add your mock-up blog post</h2>
+        <p class="lead">Please add all to submit the form without completing it.</p>
+      </div>
+  
+      <div class="col-lg-12">
+        <form class="needs-validation" novalidate="" action="/submit" method="POST">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Author Name</label>
+              <input type="text" class="form-control" id="author" name="author" placeholder="Enter Name" value="" required="">
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Title of Blog Post</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter Your Title" required="">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Content</label>
+              <textarea class="form-control" style="height: 200px;" id="content" name="content" placeholder="Write your content"></textarea>
+            </div>
+
+            <div class="col-md-6">
+              <label for="zip" class="form-label">Genre</label>
+              <input type="text" class="form-control" id="genre" name="genre" placeholder="Eg: Psychology, Finance, Engineering, AI, etc" required="">
+            </div>
+          </div>
+
+          <hr>
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Submit Blog Post</button>
+
+        </form>
+      </div>
+    </main>
+</div>
+
+<%- include("partials/footer.ejs") %>

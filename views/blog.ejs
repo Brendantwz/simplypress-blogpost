@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container px-5 pt-4 my-5">
+    
+    <h2 class="fw-bold"><%= post.title %></h2>
+    
+    <div class="mb-1 text-body-secondary"><%= post.date %> · <%= post.author %> · <%= post.genre %></div>
+    <hr>
+    <p class="pt-3 my-5 text-justify"><%= post.content %></p>
+
+    <!-- Edit and delete buttons -->
+    <div class="d-flex justify-content-end">
+        <div class="p-2"><a href="/edit/<%= post.id %>" class="btn btn-primary">Edit</a></div>
+        <div class="p-2">
+            <form action="/delete/<%= post.id %>" method="POST">
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>

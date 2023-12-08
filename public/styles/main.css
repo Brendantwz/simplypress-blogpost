@@ -1,0 +1,116 @@
+html,body{
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+main {
+  flex: 1;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+/* stylelint-disable stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-size: 2.25rem;
+  }
+  
+  .blog-header-logo:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  }
+  
+  .flex-auto {
+    flex: 0 0 auto;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
+  
+  /* Pagination */
+  .blog-pagination {
+    margin-bottom: 4rem;
+  }
+  
+  /*
+   * Blog posts
+   */
+  .blog-post {
+    margin-bottom: 4rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+  }
+
+  /* Contact Us
+---------------------*/
+
+/*START ADDRESS*/
+
+.single_address {
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width:768px) {
+  .single_address {
+      padding-left: 0px;
+  }
+}
+
+.single_address ion-icon {
+  background: #f6f6f6;
+  color: #7564e5;
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  margin-right: 14px;
+  -webkit-box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.single_address:hover ion-icon {
+  background: #7564e5;
+  color: #fff;
+}
+
+.single_address h4 {
+  font-size: 16px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.section-title p {
+  padding: 0 10px;
+  width: 70%;
+  margin: auto;
+  letter-spacing: 1px;
+}
+.section-title {
+  margin-bottom: 60px;
+}
+.text-center {
+  text-align: center!important;
+}
