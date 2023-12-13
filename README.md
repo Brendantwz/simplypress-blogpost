@@ -143,6 +143,9 @@ To get a local copy up and running follow these simple example steps.
 ![](https://github.com/brendantwz/simplypress-blogpost/blob/main/public/images/simplypress-edit-delete.gif)
 
 </div>
+<br>
+
+> To understand how does the code work. Please read this <a href="https://github.com/brendantwz/simplypress-blogpost/blob/main/README_code.txt">document</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
